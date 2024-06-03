@@ -10,10 +10,10 @@
 <meta name="keywords" content="asesoría, padres, hispanohablantes, Países Bajos">
 
 <!-- FAVICON FILES -->
-<link href="assets/images/icons/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
-<link href="assets/images/icons/apple-touch-icon-120-precomposed.png" rel="apple-touch-icon" sizes="120x120">
-<link href="assets/images/icons/apple-touch-icon-76-precomposed.png" rel="apple-touch-icon" sizes="76x76">
-<link href="assets/images/icons/favicon.png" rel="shortcut icon">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
+<link rel="manifest" href="assets/images/icons/site.webmanifest">
 
 <!-- CSS FILES -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -22,9 +22,15 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 <link rel="stylesheet" href="assets/css/color.css">
+
+    <!-- Fredoka Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 <div id="dtr-wrapper" class="clearfix"> 
+
+
     
     <!-- preloader starts -->
     <div class="dtr-preloader">
@@ -91,7 +97,7 @@
                         <li> <a class="nav-link" href="#home">Inicio</a> </li>
                         <li> <a class="nav-link" href="#about">Sobre Nosotros</a> </li>
                         <li> <a class="nav-link" href="#services">Servicios</a> </li>
-                        <li> <a class="nav-link" href="#portfolio">Proyectos</a> </li>
+                        <li> <a class="nav-link" href="#pricing">Precios</a> </li>
                         <li> <a class="nav-link" href="#blog">Blog</a> </li>
                         <li> <a class="nav-link" href="#contact">Contacto</a> </li>
                     </ul>
@@ -117,30 +123,25 @@
             <div class="row"> 
                 
                 <!-- column 1 starts -->
-                <div class="col-12 col-md-6"> 
-                    
-                    <!-- intro text -->
-                    <p class="text-size-xxl font-weight-300 color-dark">Buenos días</p>
-                    <p class="text-size-xxl color-dark"><span class="font-weight-300">Soy </span><span class="font-weight-500">Norlily</span></p>
-                    <div class="spacer-20"></div>
-                    
-                    <!-- animated text starts -->
-                    <h3 class="dtr-mb-5 color-blue">Asesora Educativa</h3>
-                    <h3 class="dtr-mb-5 color-blue opacity-1">Consejera Familiar</h3>
-                    <h3><span class="dtr-animated-headline push"> <span class="dtr-words-wrapper"> 
+                    <div class="col-12 col-md-6"> 
+                        <!-- intro text -->
+                        <p class="text-size-xxl font-weight-300 color-dark" style="font-family: 'Fredoka', sans-serif;">Buenos días</p>
+                        <p class="text-size-xxl color-dark" style="font-family: 'Fredoka', sans-serif;"><span class="font-weight-300">Soy </span><span class="font-weight-500">Norlily</span></p>
+                        <div class="spacer-20"></div>
                         
-                        <!-- first visible word --> 
-                        <b class="is-visible"><span class="color-blue opacity-2">Guía para Padres</span></b> 
-                        <!-- first visible word ends --> 
-                        
-                        <!-- second word --> 
-                        <b class="is-hidden"><span class="color-blue opacity-2">Orientadora</span></b> 
-                        <!-- second word ends --> 
-                        
-                        </span> </span></h3>
-                    <!-- animated text ends --> 
-                    
-                </div>
+                        <!-- animated text starts -->
+                        <h3 class="dtr-mb-5 color-blue" style="font-family: 'Fredoka', sans-serif;">Asesora Educativa</h3>
+                        <h3 class="dtr-mb-5 color-blue opacity-1" style="font-family: 'Fredoka', sans-serif;">Consejera Familiar</h3>
+                        <h3 style="font-family: 'Fredoka', sans-serif;"><span class="dtr-animated-headline push"> <span class="dtr-words-wrapper"> 
+                            <!-- first visible word --> 
+                            <b class="is-visible"><span class="color-blue opacity-2" style="font-family: 'Fredoka', sans-serif;">Guía para Padres</span></b> 
+                            <!-- first visible word ends --> 
+                            <!-- second word --> 
+                            <b class="is-hidden"><span class="color-blue opacity-2" style="font-family: 'Fredoka', sans-serif;">Orientadora</span></b> 
+                            <!-- second word ends --> 
+                            </span> </span></h3>
+                        <!-- animated text ends --> 
+                    </div>
                 <!-- column 1 ends --> 
                 
                 <!-- column 2 starts -->
@@ -433,7 +434,7 @@
         
 <!-- testimonial section starts
 ================================================== -->
-<section class="dtr-section overflow-hidden dtr-py-100 bg-light-blue">
+<section id="testimonials" class="dtr-section overflow-hidden dtr-py-100 bg-light-blue">
     <div class="container"> 
         
         <!-- heading starts -->
@@ -613,9 +614,9 @@
         <!-- portfolio section ends
 ================================================== --> 
         
-   <!-- pricing section starts
+<!-- pricing section starts
 ================================================== -->
-<section class="dtr-section dtr-py-100 bg-light-blue">
+<section id="pricing" class="dtr-section dtr-py-100 bg-light-blue">
     <div class="container"> 
         
         <!-- heading starts -->
@@ -633,16 +634,17 @@
                 
                 <!-- pricing 1 starts -->
                 <div class="dtr-pricing bg-white">
-                    <div class="dtr-pricing-img color-blue"><i class="icon-camera"></i></div>
-                    <h4 class="dtr-pricing-heading">Paquete Silver</h4>
-                    <p class="dtr-price color-blue"><sup>€</sup>99</p>
+                    <div class="dtr-pricing-img color-blue"><i class="icon-camera-fill"></i></div>
+                    <h4 class="dtr-pricing-heading">Platinum</h4>
+                    <p class="dtr-price color-blue"><sup>€</sup>299</p>
                     <p class="font-weight-500 color-dark">Incluye:</p>
                     <ul class="dtr-list-pricing">
-                        <li>1 Hora de Consultoría</li>
-                        <li>Sesión individual</li>
+                        <li>10 Horas de Consultoría</li>
+                        <li>Plan integral y seguimiento</li>
                         <li>Acceso a recursos en línea</li>
                     </ul>
-                    <a href="#" class="dtr-btn btn-blue dtr-mt-30">Contáctame</a> </div>
+                    <a href="#" class="dtr-btn btn-blue dtr-mt-30">Contáctame</a> 
+                </div>
                 <!-- pricing 1 ends --> 
                 
             </div>
@@ -653,9 +655,10 @@
                 
                 <!-- pricing 2 starts -->
                 <div class="dtr-pricing pricing-focused bg-dark-grey">
+                    <div class="popular-badge">Más Popular</div>
                     <div class="dtr-focus-border bg-blue"></div>
                     <div class="dtr-pricing-img color-blue"><i class="icon-camera2"></i></div>
-                    <h4 class="dtr-pricing-heading">Paquete Gold</h4>
+                    <h4 class="dtr-pricing-heading">Gold</h4>
                     <p class="dtr-price color-blue"><sup>€</sup>199</p>
                     <p class="font-weight-500 color-dark">Incluye:</p>
                     <ul class="dtr-list-pricing">
@@ -663,8 +666,10 @@
                         <li>Plan personalizado</li>
                         <li>Acceso a recursos en línea</li>
                     </ul>
-                    <a href="#" class="dtr-btn btn-blue dtr-mt-30">Contáctame</a> </div>
-                <!-- pricing 2 ends --> 
+                    <a href="#" class="dtr-btn btn-blue dtr-mt-30">Contáctame</a> 
+                </div>
+                <!-- pricing 2 ends -->
+
                 
             </div>
             <!-- column 2 ends --> 
@@ -674,16 +679,17 @@
                 
                 <!-- pricing 3 starts -->
                 <div class="dtr-pricing bg-white">
-                    <div class="dtr-pricing-img color-blue"><i class="icon-camera-fill"></i></div>
-                    <h4 class="dtr-pricing-heading">Paquete Platinum</h4>
-                    <p class="dtr-price color-blue"><sup>€</sup>299</p>
+                    <div class="dtr-pricing-img color-blue"><i class="icon-camera"></i></div>
+                    <h4 class="dtr-pricing-heading">Silver</h4>
+                    <p class="dtr-price color-blue"><sup>€</sup>99</p>
                     <p class="font-weight-500 color-dark">Incluye:</p>
                     <ul class="dtr-list-pricing">
-                        <li>10 Horas de Consultoría</li>
-                        <li>Plan integral y seguimiento</li>
+                        <li>1 Hora de Consultoría</li>
+                        <li>Sesión individual</li>
                         <li>Acceso a recursos en línea</li>
                     </ul>
-                    <a href="#" class="dtr-btn btn-blue dtr-mt-30">Contáctame</a> </div>
+                    <a href="#" class="dtr-btn btn-blue dtr-mt-30">Contáctame</a> 
+                </div>
                 <!-- pricing 3 ends --> 
                 
             </div>
@@ -696,6 +702,7 @@
 </section>
 <!-- pricing section ends
 ================================================== --> 
+
 
 <!-- cta section starts
 ================================================== -->
